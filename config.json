@@ -1,0 +1,32 @@
+{
+  "legislativas": [
+    {
+      "ano": 2022,
+      "url": "https://www.eleicoes.mai.gov.pt/legislativas2022",
+      "tipos": ["AR"],
+      "raiz": 500000,
+      "results_url": "assets/static/territory-results/territory-results-%s-%s.json",
+      "children_url": "assets/static/territory-children/territory-children-%s.json"
+    }
+  ],
+  "regionais": [
+    {
+      "ano": 2023,
+      "url": "https://www.regionais2023.mai.gov.pt",
+      "tipos": ["RM"],
+      "raiz": 300000,
+      "results_url": "frontend/data/TerritoryResults?territoryKey=%s&electionId=%s",
+      "children_url": "frontend/data/TerritoryChildren?territoryKey=%s"
+    }
+  ],
+  "europeias": [
+    {
+      "ano": 2019,
+      "url": "https://www.eleicoes.mai.gov.pt/europeias2019",
+      "tipos": ["EUR"],
+      "raiz": 500000,
+      "results_url": "static-data/territory-results/TERRITORY-RESULTS-%s-%s.json",
+      "children_url": "static-data/territory-children/TERRITORY-CHILDREN-%s.json"
+    }
+  ]
+}
