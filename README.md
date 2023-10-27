@@ -17,10 +17,10 @@ Instalação:
 Exemplos de execução:
 
 - Gravar todos os resultados desta eleição por local
-`poetry run ./eleicoes/gravar_resultados.py --eleicao legislativas --ano 2022`
+`poetry run ./emaigov/gravar_resultados.py --eleicao legislativas --ano 2022`
 
 - Gravar os resultados referentes aos locais com os códigos indicados, todos os tipos de orgãos
-`poetry run ./eleicoes/gravar_resultados.py --eleicao legislativas --ano 2022 --codigos 500000 080102 080105`
+`poetry run ./emaigov/gravar_resultados.py --eleicao presidenciais --ano 2021 --codigos 500000 080102 080105`
 
 - Gravar os resultados referentes aos locais com os códigos indicados e orgão indicado em tipos
-`poetry run ./eleicoes/gravar_resultados.py --eleicao legislativas --ano 2022 --codigos 500000 080102 --tipos AR`
+`poetry run ./emaigov/gravar_resultados.py --eleicao autarquicas --ano 2021 --codigos 500000 080102 --tipos CM`
