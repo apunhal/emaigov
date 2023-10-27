@@ -24,3 +24,7 @@ Exemplos de execução:
 
 - Gravar os resultados referentes aos locais com os códigos indicados e orgão indicado em tipos
 `poetry run ./emaigov/gravar_resultados.py --eleicao autarquicas --ano 2021 --codigos 500000 080102 --tipos CM`
+
+TODO:
+- gravar resultados em formato CSV
+- gravar todos os resultados de todas as eleicoes entre ano X e ano Y para os locais Z ou W 
