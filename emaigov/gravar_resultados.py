@@ -2,6 +2,7 @@
 """ script para gravar Resultados de eleições """
 import json
 import os
+import time
 import argparse
 import requests
 import constants
@@ -9,6 +10,7 @@ import constants
 
 def get_children(session, config, key):
     """get children"""
+    time.sleep(5)
     post_url = config["children_url"] % (key)
     url = f'{config["url"]}/{post_url}'
     #print(f"url={url}")
