@@ -38,5 +38,15 @@
       "results_url": "assets/static/territory-results/territory-results-%s-%s.json",
       "children_url": "assets/static/territory-children/territory-children-%s.json"
     }
-  ]  
+  ],
+  "autarquicas": [
+    {
+      "ano": 2021,
+      "url": "https://www.eleicoes.mai.gov.pt/autarquicas2021",
+      "tipos": ["CM","AM","AF"],
+      "raiz": 500000,
+      "results_url": "assets/static/territory-results/territory-results-%s-%s.json",
+      "children_url": "assets/static/territory-children/territory-children-%s.json"
+    }
+  ]
 }

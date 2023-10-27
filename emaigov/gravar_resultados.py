@@ -11,7 +11,7 @@ def get_children(session, config, key):
     """get children"""
     post_url = config["children_url"] % (key)
     url = f'{config["url"]}/{post_url}'
-    print(f"url={url}")
+    #print(f"url={url}")
     response = session.get(url)
     return json.loads(response.content)
 
@@ -102,9 +102,6 @@ def create_index(session, config):
                 f = dict((x, y) for x, y in f.items())
                 f["tipo"] = "Freguesia"
                 index.append(f)
-                break
-            break
-        break
     return index
 
 
