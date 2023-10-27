@@ -7,9 +7,9 @@ import requests
 import constants
 
 
-def get_children(session, config, id):
+def get_children(session, config, key):
     """get children"""
-    post_url = config["children_url"] % (id)
+    post_url = config["children_url"] % (key)
     url = f'{config["url"]}/{post_url}'
     print(f"url={url}")
     response = session.get(url)
@@ -18,7 +18,9 @@ def get_children(session, config, id):
 
 def init_session():
     """init http session"""
-    headers = {"User-Agent": "Mozilla/5.0 (Windows NT 6.0; WOW64; rv:24.0) Gecko/20100101 Firefox/24.0"}
+    headers = {"User-Agent":"""
+               Mozilla/5.0 (Windows NT 6.0; WOW64; rv:24.0) Gecko/20100101 Firefox/24.0
+               """}
     session = requests.Session()
     session.trust_env = False
     session.headers = headers
@@ -28,15 +30,18 @@ def init_session():
 def cli_parse_args():
     """parse CLI arguments"""
     parser = argparse.ArgumentParser()
-    parser.add_argument(
-        "--eleicao",
+    parser.add_argument("--eleicao",
         required=True,
         help="Tipo de Eleição: legislativas, regionais, presidenciais, europeias e autarquicas",
     )
     parser.add_argument("--ano", required=True, type=int, help="Ano da Eleição: YYYY")
-    parser.add_argument("--codigos", nargs="*", help="Código(s) do(a) distrito, concelho, freguesia pretendido(s)")
+    parser.add_argument("--codigos",
+        nargs="*",
+        help="Código(s) do(a) distrito, concelho, freguesia pretendido(s)")
     parser.add_argument("--tipos", nargs="*", help="Código(s) do(s) orgão(s) a eleger")
-    parser.add_argument("--indice", action="store_true", help="mostra um indice com a correspondencia de cada código")
+    parser.add_argument("--indice",
+        action="store_true",
+        help="mostra um indice com a correspondencia de cada código")
     return parser.parse_args()
 
 
