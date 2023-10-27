@@ -14,7 +14,7 @@
       "ano": 2023,
       "url": "https://www.regionais2023.mai.gov.pt",
       "tipos": ["RM"],
-      "raiz": 300000,
+      "raiz": 500000,
       "results_url": "frontend/data/TerritoryResults?territoryKey=%s&electionId=%s",
       "children_url": "frontend/data/TerritoryChildren?territoryKey=%s"
     }

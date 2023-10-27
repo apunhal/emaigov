@@ -18,9 +18,7 @@ def get_children(session, config, key):
 
 def init_session():
     """init http session"""
-    headers = {"User-Agent":"""
-               Mozilla/5.0 (Windows NT 6.0; WOW64; rv:24.0) Gecko/20100101 Firefox/24.0
-               """}
+    headers = {"User-Agent":"Mozilla/5.0 (Windows NT 6.0; WOW64; rv:24.0) Gecko/20100101 Firefox/24.0"}
     session = requests.Session()
     session.trust_env = False
     session.headers = headers
@@ -30,7 +28,8 @@ def init_session():
 def cli_parse_args():
     """parse CLI arguments"""
     parser = argparse.ArgumentParser()
-    parser.add_argument("--eleicao",
+    parser.add_argument(
+"--eleicao",
         required=True,
         help="Tipo de Eleição: legislativas, regionais, presidenciais, europeias e autarquicas",
     )
