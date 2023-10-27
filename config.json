@@ -28,5 +28,15 @@
       "results_url": "static-data/territory-results/TERRITORY-RESULTS-%s-%s.json",
       "children_url": "static-data/territory-children/TERRITORY-CHILDREN-%s.json"
     }
-  ]
+  ],
+  "presidenciais": [
+    {
+      "ano": 2021,
+      "url": "https://www.eleicoes.mai.gov.pt/presidenciais2021",
+      "tipos": ["PR"],
+      "raiz": 500000,
+      "results_url": "assets/static/territory-results/territory-results-%s-%s.json",
+      "children_url": "assets/static/territory-children/territory-children-%s.json"
+    }
+  ]  
 }
