@@ -33,5 +33,4 @@ Exemplos de execução:
 `poetry run emaigov/json2csv.py "target/autarquicas-2021/*.*"`
 
 TODO:
-- gravar resultados em formato CSV
 - gravar todos os resultados de todas as eleicoes entre ano X e ano Y para os locais Z ou W 
